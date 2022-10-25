@@ -8,8 +8,9 @@ namespace OOP_LABB_3
     {
         public virtual double Area()
         {
-           double area=0;
-           return area;
+            double area=0;
+            Console.WriteLine(area);
+            return area;
         }
 
     }

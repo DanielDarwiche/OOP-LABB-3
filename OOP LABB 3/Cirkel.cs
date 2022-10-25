@@ -12,13 +12,15 @@ namespace OOP_LABB_3
         {
             radie = _radie;
         }
-        public Cirkel():this(12)
+        public Cirkel():this(5)
         {
 
         }
-        public  double Area(double radie,double pi )
+        public override double Area()
         {
             double area = (radie * 2 )* pi;
+            Console.WriteLine(area);
+
             return area;
         }
         public double _radie

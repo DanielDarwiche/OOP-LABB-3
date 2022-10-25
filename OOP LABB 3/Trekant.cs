@@ -13,13 +13,14 @@ namespace OOP_LABB_3
             bas = _bas;
             höjd = _höjd;
         }
-        public Trekant() : this(2,5)
+        public Trekant() : this(2,2)
         {
 
         }
-        public  double Area(double bas, double höjd )
+        public override  double Area( )
         {
-            double area = bas * höjd;
+            double area = bas * höjd;  /// SPelar roll _höjd eller höjd?        override eller inte här? 
+            Console.WriteLine(area);
             return area;
         }
         public double _bas { get { return bas; } set { bas = value; } }

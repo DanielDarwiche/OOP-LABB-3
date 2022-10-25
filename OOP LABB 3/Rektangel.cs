@@ -13,11 +13,13 @@ namespace OOP_LABB_3
             bredd = _bredd;
             höjd = _höjd;
         }
-        public Rektangel() : this(2,5) {         }
+        public Rektangel() : this(2,2) {         }
 
-        public  double Area(double bredd, double höjd )
+        public override double Area()
         {
             double area = bredd * höjd;
+            Console.WriteLine(area);
+
             return area;
         }
         public double _bredd { get { return bredd; } set { bredd = value; } }

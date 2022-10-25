@@ -6,12 +6,12 @@ namespace OOP_LABB_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Geometri:");
+            Console.WriteLine("Geometri:"); //skriver ut metoder och deras standardsatta värden 
             Geometri nyy = new Geometri();
             nyy.Area();
 
             Console.WriteLine("Rektangel:");
-            Rektangel test = new Rektangel(22,4);
+            Rektangel test = new Rektangel();
             test.Area();
 
 
