@@ -17,10 +17,12 @@ namespace OOP_LABB_3
         {
 
         }
-        public override double Area(double area )
+        public  double Area(double bas, double höjd )
         {
-            area = bas * höjd;
+            double area = bas * höjd;
             return area;
         }
+        public double _bas { get { return bas; } set { bas = value; } }
+        public double _höjd { get { return höjd; } set { höjd = value; } }
     }
 }

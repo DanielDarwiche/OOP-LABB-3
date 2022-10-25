@@ -15,10 +15,12 @@ namespace OOP_LABB_3
         }
         public Rektangel() : this(2,5) {         }
 
-        public override double Area(double bredd, double höjd )
+        public  double Area(double bredd, double höjd )
         {
             double area = bredd * höjd;
             return area;
         }
+        public double _bredd { get { return bredd; } set { bredd = value; } }
+        public double _höjd { get { return höjd; } set { höjd = value; } }
     }
 }

@@ -16,10 +16,16 @@ namespace OOP_LABB_3
         {
 
         }
-        public override double Area(double area )
+        public  double Area(double radie,double pi )
         {
-            area = (radie * 2 )* pi;
+            double area = (radie * 2 )* pi;
             return area;
         }
+        public double _radie
+        {
+            get { return radie; }
+            set { radie = value; }
+        }
+        public double _pi { get { return pi; } }
     }
 }
