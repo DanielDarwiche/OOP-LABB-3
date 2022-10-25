@@ -7,14 +7,13 @@ namespace OOP_LABB_3
         static void Main(string[] args)
         {
             Console.WriteLine("Geometri:"); //skriver ut metoder och deras standardsatta värden 
-            Geometri nyy = new Geometri();
+            Geometri nyy = new Geometri();//om man skriver in värden i metoderna så funkar det också
             nyy.Area();
 
             Console.WriteLine("Rektangel:");
             Rektangel test = new Rektangel();
             test.Area();
-
-
+            
             Console.WriteLine("Cirkel:");
             Cirkel testt = new Cirkel();
             testt.Area();
@@ -22,9 +21,6 @@ namespace OOP_LABB_3
             Console.WriteLine("Trekant:");
             Trekant att = new Trekant();
             att.Area();
-
-
-
         }
     }
 }
