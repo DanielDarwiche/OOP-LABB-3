@@ -6,21 +6,24 @@ namespace OOP_LABB_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Geometri:"); //skriver ut metoder och deras standardsatta värden 
-            Geometri nyy = new Geometri();//om man skriver in värden i metoderna så funkar det också
-            nyy.Area();
-
-            Console.WriteLine("Rektangel:");
-            Rektangel test = new Rektangel();
-            test.Area();
-            
-            Console.WriteLine("Cirkel:");
-            Cirkel testt = new Cirkel();
-            testt.Area();
-
-            Console.WriteLine("Trekant:");
-            Trekant att = new Trekant();
-            att.Area();
+            Console.WriteLine("Följande är Geometri Area, som returnerar 0"); 
+            Geometri Shape = new Geometri();//Skapar tom geometri sak som returnerar 0
+            Shape.Area();//blir 0
+            Console.WriteLine("\nFöljande är area med standardvärden och följande manuellt insatta värden"); 
+            Shape = new Cirkel();//omvandlar Shape till tom cirkel med standardvärden
+            Shape.Area();
+            Shape = new Cirkel(9);//sätter in värde i cirkeln 
+            Shape.Area();
+            Console.WriteLine("\nFöljande är area med standardvärden och följande manuellt insatta värden");  
+            Shape = new Rektangel();//omvandlar Shape till rektangel med standardvärde
+            Shape.Area();
+            Shape = new Rektangel(2, 9);//sätter in värden i rektangeln
+            Shape.Area();
+            Console.WriteLine("\nFöljande är area med standardvärden och följande manuellt insatta värden");  
+            Shape = new Trekant();//omvandlar Shape till Trekant med standardvärden
+            Shape.Area();
+            Shape = new Trekant(3, 9);//sätter in värden i trekant
+            Shape.Area();
         }
     }
 }

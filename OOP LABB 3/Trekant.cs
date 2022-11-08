@@ -6,24 +6,21 @@ namespace OOP_LABB_3
 {
     class Trekant:Geometri
     {
-        protected double bas;
-        protected double höjd;
+        public double bas;
+        public double höjd;
         public Trekant(double _bas, double _höjd)
         {
             bas = _bas;
             höjd = _höjd;
         }
-        public Trekant() : this(2,2)//standardvärden
+        public Trekant() : this(5,4)//standardvärden
         {
-
         }
-        public override  double Area( )
+        public override double Area( )
         {
             double area = bas * höjd; 
             Console.WriteLine(area);
             return area;
         }
-        public double _bas { get { return bas; } set { bas = value; } }//getters och setters för att nå variblerna i main
-        public double _höjd { get { return höjd; } set { höjd = value; } }
     }
 }
